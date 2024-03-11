@@ -1,7 +1,9 @@
 function BmiScore(props) {
+    const {bmino,bminame} = props;
   return (
     <div>
-        <div>Hi {props.bmino} {props.bminame}</div>
+        <div>Hi {bmino} <br />
+        {bminame}</div>
     </div>
   )
 }
