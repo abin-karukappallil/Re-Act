@@ -7,18 +7,17 @@ import Form from './components/form';
 
 function App() {
   // let bmi = 18;
-  const [bmi, setbmi] = useState(18)
-  const changeBmi = () => {
-    // bmi = 20;
-    setbmi(19)
-  }
+  const [bmi, setbmi] = useState(18);
+  const [bmiType, setbmiType] = useState("overweight");
   return (
    <>
    <div>My Bmi is {bmi}</div>
-   <button onClick={changeBmi}>Click</button>
+   <button onClick={()=>{
+    setbmi(33)
+   }}>Click</button>
    
    <Form/>
-   <BmiScore/>
+   <BmiScore bmino={bmi} bminame={bmiType}/>
    <BmiList/>
    </>
   );
