@@ -1,5 +1,4 @@
-function BmiScore(props) {
-    const {bmino,bminame} = props;
+function BmiScore({bmino,bminame}) {
   return (
     <div>
         <div>Hi {bmino} <br />
