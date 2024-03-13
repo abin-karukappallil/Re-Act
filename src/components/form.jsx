@@ -1,7 +1,7 @@
 function Form() {
   return (
     <div>
-        <form action="post">
+        <form action="post" className="form">
           <label htmlFor="height">Height</label>
           <input type="number" />
           <label htmlFor="weight">Weight</label>
