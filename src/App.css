@@ -12,6 +12,7 @@
     box-shadow: inset 0 0 10px #000;
     height: 40px;
     width: 70%;
+    padding-left: 20px;
 
 }
 .form button {
@@ -19,4 +20,13 @@
     align-items: center;
     border-radius: 50px;
     height: 40px;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
