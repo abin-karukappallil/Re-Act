@@ -9,19 +9,23 @@
 }
 .form input {
     border-radius: 50px;
-    box-shadow: inset 0 0 10px #000;
+    border: none;
+    box-shadow: inset 0 0 10px rgb(77, 77, 250);
     height: 40px;
     width: 70%;
     padding-left: 20px;
 
 }
 .form button {
-    width: 40%;
+    width: 30%;
+    background-color: rgb(77, 77, 250);
     align-items: center;
+    color: white;
     border-radius: 50px;
     height: 40px;
     font-size: 1.1rem;
     font-weight: 500;
+    position: ;
 }
 .label {
     display: flex;
@@ -31,4 +35,8 @@
     align-items: center;
     font-size: 1.1rem;
     font-weight: 500;
+}
+.form h1 {
+    color: blue;
+    margin-left: 20px;
 }
