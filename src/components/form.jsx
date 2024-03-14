@@ -16,7 +16,7 @@ function Form() {
           <div className="label">
             <label htmlFor="height">Height(m)</label>
             <input type="number" />
-            <label  htmlFor="weight">Weight(kg)</label>
+            <label>Weight(kg)</label>
             <input value={weight} onChange={getWeight} type="text" />
           </div>
           <button>Submit</button>
