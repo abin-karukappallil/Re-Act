@@ -39,6 +39,9 @@
     color: blue;
     margin-left: 20px;
 }
+.alert {
+    color: red;
+}
 @media (width <=600px) {
     .form {
         width: 50%;
