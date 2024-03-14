@@ -2,11 +2,14 @@ import { useState } from "react";
 function Form() {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
-  const getWeight = (e) => {
-    console.log(e.target);
-    setWeight(e.target.value);
+  const getWeight = (g) => {
+    console.log(g.target.value);
+    setWeight(g.target.value);
 
-
+  };
+  const getHeight = (e) => {
+    console.log(e.target.value);
+    setHeight(e.target.value);
   };
   return (
     <div>
@@ -14,8 +17,8 @@ function Form() {
         <form action="post" className="form">
           <h1>BMI calculator</h1>
           <div className="label">
-            <label htmlFor="height">Height(m)</label>
-            <input type="number" />
+            <label>Height(m)</label>
+            <input value={height} onChange={getHeight} type="text" />
             <label>Weight(kg)</label>
             <input value={weight} onChange={getWeight} type="text" />
           </div>
