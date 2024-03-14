@@ -41,14 +41,23 @@
 }
 @media (width <=600px) {
     .form {
-        width: 40%;
+        width: 50%;
+        font-size: 0.7rem !important;
+        margin-left:87px;
     }
-   button {
-        width: 90%;
+   .form button {
+        width: 100px;
     }
     .form .label input {
-        margin-left: 53px;
+        margin-left: 3px;
         width: 80px;
-        
+        font-size: 0.7rem;
+
+    }
+    
+    .form .label {
+        gap: 5px !important;
+        font-size: 0.9rem;
+        font-weight: 700;
     }
 }
