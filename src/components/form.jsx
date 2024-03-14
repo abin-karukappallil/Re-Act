@@ -13,16 +13,14 @@ function Form() {
       console.log(weight);
       console.log(height);
     }
-  
-
   }
-  let alertMessage;
-  if(alert) {
-    alertMessage =  <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>;
-  }
-  else {
-    alertMessage = '';
-  }
+  // let alertMessage;
+  // if(alert) {
+  //   alertMessage =  <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>;
+  // }
+  // else {
+  //   alertMessage = '';
+  // }
   return (
     <div>
       <div className="form-wrapper">
@@ -30,14 +28,14 @@ function Form() {
           <h1>BMI calculator</h1>
           <div className="label">
             <label>Height(m)</label>
-            <input value={height} onChange={(e) => { setHeight(e.target.value) }} type="text" required/>
+            <input value={height} onChange={(e) => { setHeight(e.target.value) }} type="text" required />
             <label>Weight(kg)</label>
             <input value={weight} onChange={(e) => { setWeight(e.target.value) }} type="text" required />
           </div>
           <button>Submit</button>
-         {alertMessage}
+          {alert && <div className="alert" role="alert">Please Enter A Valid Input</div>}
         </form>
-         </div>
+      </div>
     </div>
   )
 }
