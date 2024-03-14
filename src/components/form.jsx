@@ -6,13 +6,22 @@ function Form() {
   const onSubmit = (e) => {
     e.preventDefault();
     if (isNaN(weight) || isNaN(height)) {
-      alert("Invalid input");
+      setAlert(true);
     }
     else {
+      setAlert(false);
       console.log(weight);
       console.log(height);
     }
+  
 
+  }
+  let alertMessage;
+  if(alert) {
+    alertMessage =  <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>;
+  }
+  else {
+    alertMessage = '';
   }
   return (
     <div>
@@ -26,8 +35,7 @@ function Form() {
             <input value={weight} onChange={(e) => { setWeight(e.target.value) }} type="text" required />
           </div>
           <button>Submit</button>
-          <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>
-  
+         {alertMessage}
         </form>
          </div>
     </div>
