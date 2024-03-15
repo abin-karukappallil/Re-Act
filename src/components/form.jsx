@@ -14,13 +14,13 @@ function Form() {
       console.log(height);
     }
   }
-  // let alertMessage;
-  // if(alert) {
-  //   alertMessage =  <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>;
-  // }
-  // else {
-  //   alertMessage = '';
-  // }
+  let alertMessage;
+  if(alert) {
+    alertMessage =  <div className="alert" role="alert"><h6>Please Enter A Valid Input</h6></div>;
+  }
+  else {
+    alertMessage = '';
+  }
   return (
       <div className="form-wrapper">
         <form onSubmit={onSubmit} className="form">
