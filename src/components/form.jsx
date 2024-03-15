@@ -28,7 +28,7 @@ function Form() {
           <div className="label">
             <label>Height(m)</label>
             <input value={height} onChange={(e) => { setHeight(e.target.value) }} type="text" required />
-            <label>Weigt(kg)</label>
+            <label>Weight(kg)</label>
             <input value={weight} onChange={(e) => { setWeight(e.target.value) }} type="text" required />
           </div>
           <button>Submit</button>
