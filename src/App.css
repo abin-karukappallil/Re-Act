@@ -1,11 +1,18 @@
 .form {
     margin: 10%;
-    width: 50%;
+    width: 40%;
     height: 20%;
     display: flex;
     gap: 20px;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+.form-wrapper{
+    width: 100%;
+    
+    margin-bottom: 2px !important;
 }
 .form input {
     border-radius: 50px;
@@ -41,6 +48,18 @@
 }
 .alert {
     color: red;
+}
+.square-score {
+    background-color: cadetblue;
+    width: 17%;
+    height: 44px;
+    text-align: center;
+}
+.score-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 @media (width <=600px) {
     .form {
