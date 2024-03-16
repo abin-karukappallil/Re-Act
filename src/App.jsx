@@ -9,11 +9,14 @@ function App() {
   // let bmi = 18;
   const [bmi, setbmi] = useState("");
   const [bmiType, setbmiType] = useState("");
+  const onFormSub = (w,h)=>{
+    console.log(w,h);
+  }
   return (
    <>
    
    
-   <Form/>
+   <Form getData={onFormSub}/>
    <BmiScore bmino={bmi} bminame={bmiType}/>
    <BmiList/>
    </>

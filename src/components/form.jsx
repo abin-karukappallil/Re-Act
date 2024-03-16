@@ -1,5 +1,5 @@
 import { useState } from "react";
-function Form() {
+function Form({getData}) {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [alert, setAlert] = useState(false);
@@ -9,9 +9,8 @@ function Form() {
       setAlert(true);
     }
     else {
+      getData(weight, height);
       setAlert(false);
-      console.log(weight);
-      console.log(height);
     }
   }
   // let alertMessage;
