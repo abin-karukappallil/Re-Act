@@ -51,7 +51,7 @@
 }
 .square-score {
     background-color: cadetblue;
-    width: 17%;
+    width: fit-content;
     height: 44px;
     text-align: center;
 }
@@ -59,11 +59,65 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
+    box-shadow: 1px 9px 10px rgb(32, 102, 126);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.score-wrap h3 {
+    color: blue;
+    font-weight: 600;
+}
+.score-wrap p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* .shadow {
+    width: 50%;
+    align-items: center;
+    display: fleX;
+    margin-left: auto;
+    margin-right: auto;
+    
+} */
+.main-score {
+    width: 100%;
+    
 }
 @media (width <=600px) {
     .form {
-        width: 50%;
+        width: 68% !important;
+        font-size: 0.7rem !important;
+        margin-left:87px;
+    }
+   .form button {
+        width: 90px;
+        height: 35px;
+        font-size: 0.8rem;
+
+    }
+    .form .label input {
+        margin-left: 3px;
+        width: 80px;
+        font-size: 0.7rem;
+
+    }
+    .form h1 {
+        font-size: 1.5rem;
+        margin: auto;
+
+    }
+    .form .label {
+        gap: 5px !important;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+@media (width <= 1169px) {
+    .form {
+        width: 68% !important;
         font-size: 0.7rem !important;
         margin-left:87px;
     }
