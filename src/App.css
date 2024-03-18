@@ -88,38 +88,8 @@
 }
 @media (width <=600px) {
     .form {
-        width: 68% !important;
+        width: 100% !important;
         font-size: 0.7rem !important;
-        margin-left:87px;
-    }
-   .form button {
-        width: 90px;
-        height: 35px;
-        font-size: 0.8rem;
-
-    }
-    .form .label input {
-        margin-left: 3px;
-        width: 80px;
-        font-size: 0.7rem;
-
-    }
-    .form h1 {
-        font-size: 1.5rem;
-        margin: auto;
-
-    }
-    .form .label {
-        gap: 5px !important;
-        font-size: 0.9rem;
-        font-weight: 700;
-    }
-}
-@media (width <= 1169px) {
-    .form {
-        width: 68% !important;
-        font-size: 0.7rem !important;
-        margin-left:87px;
     }
    .form button {
         width: 90px;
